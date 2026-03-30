@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int arr[] = {1, 2, 3, 2, 4, 2};
+    int n = 6;
+    int key, count = 0;
+
+    cin >> key;
+
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == key) {
+            count++;
+        }
+    }
+
+    if (count > 0) {
+        cout << "Found " << count << " times" << endl;
+    } else {
+        cout << "Not found" << endl;
+    }
+
+    return 0;
+}
